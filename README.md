@@ -19,11 +19,11 @@ An interactive browser clone of the dark themed macOS Monterey operating system.
     - Replicates the style of Youtube
 * Personal Projects in "Finder app"
 <img width="300" src="Screen Shot 2023-01-10 at 9.43.21 am.png">
-    - Contains my Resume as a download
-    - Links to Personal Website and Projects (will be embedded internally in next update)
+   - Contains my Resume as a download
+   - Links to Personal Website and Projects (will be embedded internally in next update)
 * Personal contact details in "Contacts app" 
 <img width="300" src="Screen Shot 2023-01-10 at 9.44.06 am.png">
-    - Links to my email. LinkedIn, and Github
+   - Links to my email. LinkedIn, and Github
 * Replicates the styling of MacOS Monterey in dark theme
 * Selectable app icons
 * Selecting an icon will open an "app", creating a modal to display some content
