@@ -49,19 +49,30 @@
     }
     &-tab {
       &-search {
-        margin-left: 10px;
-        margin-right: 10px;
-        background: rgba(73, 73, 73, 0.3);
-        border-radius: 5px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        span {
-          color: rgba(216, 216, 216, 0.5);
-          position: relative;
-          bottom: 5px;
-          left: 5px;
+        input{
+          padding-top: 8px;
+          padding-bottom: 8px;
+          padding-left: 40px;
+          padding-right: 20px;
+          color: white;
+          margin-left: 10px;
+          margin-right: 10px;
+          background: rgba(73, 73, 73, 0.3);
+          border-radius: 5px;
+          
+          border-style:none;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
+        // span {
+        //   color: rgba(216, 216, 216, 0.5);
+        //   position: relative;
+        //   bottom: 5px;
+        //   left: 5px;
+        // }
         img {
-          transform: translate(6px, 6px);
+          position: absolute;
+          left: 15px;
+          top:47px
         }
       }
       &-header {

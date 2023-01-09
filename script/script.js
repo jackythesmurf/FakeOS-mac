@@ -89,8 +89,8 @@ window.onload = function () {
   const safari = document.getElementById("safari-app");
   safari.style.display = "none";
 
-  const contacts = document.getElementById("contacts-app");
-  contacts.style.display = "none";
+  // const contacts = document.getElementById("contacts-app");
+  // contacts.style.display = "none";
 
   // menu bar toggle
   const monitor = document.getElementById("monitor");
