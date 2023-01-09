@@ -20,7 +20,7 @@ body {
     background: url("https://512pixels.net/wp-content/uploads/2021/06/12-Dark-thumbnail.jpg")
       no-repeat center fixed;
     background-size: cover;
-    max-height: 100vh;
+    min-height: 100vh;
     color: rgb(255, 255, 255);
     overflow: hidden;
   }

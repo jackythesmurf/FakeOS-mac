@@ -96,6 +96,7 @@ window.onload = function () {
   const monitor = document.getElementById("monitor");
 
   monitor.addEventListener("click", (event) => {
+    console.log(event.target)
    
     menuForceClose(event, "apple-logo", "apple-logo-list");
     menuForceClose(event, "file-menu", "file-menu-list");
@@ -179,7 +180,7 @@ window.onload = function () {
 
     contactsApp.addEventListener("mousedown", (event) => {
       dragging = contactsApp;
-      console.log(event.target)
+      
       
       if (event.target == document.getElementsByClassName("dockapps-contacts-left-buttons")[0]){
         let dragOffsetX = event.offsetX ;
