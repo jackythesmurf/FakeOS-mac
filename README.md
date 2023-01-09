@@ -16,20 +16,20 @@ An interactive browser clone of the dark themed macOS Monterey operating system.
 * Integrated Youtube clone in "Safari app" 
   - Video and Audio can be played
   - Replicates the style of Youtube
-<img width="300" src="Screen Shot 2023-01-10 at 9.43.48 am.png">
+<img width="500" src="Screen Shot 2023-01-10 at 9.43.48 am.png">
 
   
   
 * Personal Projects in "Finder app"
   - Contains my Resume as a download
   - Links to Personal Website and Projects (will be embedded internally in next update)
-<img width="300" src="Screen Shot 2023-01-10 at 9.43.21 am.png">
+<img width="400" src="Screen Shot 2023-01-10 at 9.43.21 am.png">
 
 
 
 * Personal contact details in "Contacts app" 
   - Links to my email. LinkedIn, and Github
-<img width="300" src="Screen Shot 2023-01-10 at 9.44.06 am.png">
+<img width="400" src="Screen Shot 2023-01-10 at 9.44.06 am.png">
 
 
   
