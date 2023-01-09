@@ -435,6 +435,7 @@
   transform: translate(0px, 15px);
 }
 .dockapps-safari-youtube-contents-left-details-channel-right {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 50px 10px 50px 10px 50px 10px;
   margin-left: 80px;
