@@ -1,3 +1,90 @@
+const updateClock = (timeHTML) => {
+  const date = new Date();
+
+  let dateString = "";
+
+  let dayOfTheWeek = date.getDay();
+
+  switch (dayOfTheWeek) {
+    case 0:
+      dateString += "Mon ";
+      break;
+    case 1:
+      dateString += "Tue ";
+      break;
+    case 2:
+      dateString += "Wed ";
+      break;
+    case 3:
+      dateString += "Thu ";
+      break;
+    case 4:
+      dateString += "Fri ";
+      break;
+    case 5:
+      dateString += "Sat ";
+      break;
+    case 6:
+      dateString += "Sun ";
+      break;
+  }
+
+  dateString += date.getDate() + " ";
+
+  let monthNumeral = date.getMonth();
+
+  switch (monthNumeral) {
+    case 0:
+      dateString += "Jan &nbsp ";
+      break;
+    case 1:
+      dateString += "Feb &#160";
+      break;
+    case 2:
+      dateString += "Mar &#160";
+      break;
+    case 3:
+      dateString += "Apr ";
+      break;
+    case 4:
+      dateString += "May ";
+      break;
+    case 5:
+      dateString += "Jun ";
+      break;
+    case 6:
+      dateString += "Jul ";
+      break;
+    case 7:
+      dateString += "Aug ";
+      break;
+    case 8:
+      dateString += "Sep ";
+      break;
+    case 9:
+      dateString += "Oct ";
+      break;
+    case 10:
+      dateString += "Nov ";
+      break;
+    case 11:
+      dateString += "Dec ";
+      break;
+  }
+
+  dateString += date.getHours();
+
+  let minute = String(date.getMinutes());
+  if (minute.length == 1) {
+    minute = "0" + minute;
+  }
+  dateString += ":" + minute;
+  console.log(dateString);
+  timeHTML.innerHTML = dateString;
+
+
+};
+
 const menuToggle = (menuId, listId, close) => {
   const menu = document.getElementById(menuId);
   const list = document.getElementById(listId);
@@ -74,6 +161,14 @@ const bringToFront = (id) => {
 
 
 window.onload = function () {
+  // time
+  let timeHTML = document.getElementById("time");
+
+  setInterval(updateClock, 2000, timeHTML)
+  
+
+
+
   // hide initial apps and menu
   const apple = document.getElementById("apple-logo-list");
   apple.style.display = "none";
