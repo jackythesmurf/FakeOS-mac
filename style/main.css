@@ -303,24 +303,26 @@
 .dockapps-safari-youtube-head-icon {
   margin-left: 20px;
 }
-.dockapps-safari-youtube-head-search {
-  display: flex;
+.dockapps-safari-youtube-head-search input {
+  color: white;
+  background-color: rgb(31, 31, 31);
   border-style: solid;
   border-radius: 20px;
   border-color: rgb(88, 88, 88);
   border-width: 1px;
-  padding-top: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 20px;
   padding-right: 200px;
   margin-left: 140px;
 }
 .dockapps-safari-youtube-head-search img {
-  transform: translate(190px, 1px);
-}
-.dockapps-safari-youtube-head-search p {
-  width: 100%;
+  position: relative;
+  top: 12px;
+  right: 40px;
 }
 .dockapps-safari-youtube-head-user {
+  margin-top: 3px;
   position: absolute;
   right: 0;
   margin-right: 15px;
@@ -333,7 +335,7 @@
 }
 .dockapps-safari-youtube-head-user img {
   margin-left: 10px;
-  margin-top: 3px;
+  margin-top: 2px;
   margin-bottom: 3px;
   border-style: solid;
   border-color: #06c1ff;
@@ -389,6 +391,16 @@
   position: relative;
   top: 10px;
   right: 33px;
+}
+.dockapps-safari-youtube-contents-left-details-channel-videostats {
+  font-size: x-small;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: rgb(54, 54, 54);
 }
 .dockapps-safari-youtube-contents-right {
   margin-left: 20px;
