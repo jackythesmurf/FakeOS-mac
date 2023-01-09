@@ -114,15 +114,59 @@
                 padding-left: 60px;
             }
             &-list{
+                
                 padding-left: 70px;
                 display: grid;
                 grid-template-columns: 150px 150px 150px ;
                 &-items{
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    a:hover {
+                        img{
+                            background-color: rgba(174, 229, 253, 0.5);
+                            border-radius:10px;
+                            
+                        }
+                        p{
+                            background-color:#0486ff;
+                            max-width: fit-content;
+                            border-radius:4px;
+                            
+                            
+                        }
+                        
+                        
+                    }
                     img{
+                        margin-top: 5px;
                         width: 70px;
                     }
-                    p {
-                        padding-left: 10px;
+                    p{
+                        margin-top: 5px;
+                        padding: 2px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                    #resume {
+                        position: relative;
+                        right:5px;
+                    }
+                    #poems{
+                        margin-left:0px
+                    }
+                    #personal-website{
+                        position: relative;
+                        right:30px;
+                    }
+                    #project-1{
+                        position: relative;
+                        right:5px;
+                    }
+                    #project-2{
+                        position: relative;
+                        right:5px;
                     }
                 }
             }
