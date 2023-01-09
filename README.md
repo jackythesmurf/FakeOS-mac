@@ -14,7 +14,7 @@ An interactive browser clone of the dark themed macOS Monterey operating system.
 
 
 * Integrated Youtube clone in "Safari app"
-<img width="300" src="Screen Shot 2023-01-10 at 9.43.48 am.png">
+   ![](Screen Shot 2023-01-10 at 9.43.48 am.png)
     - Video and Audio can be played
     - Replicates the style of Youtube
 * Personal Projects in "Finder app"
