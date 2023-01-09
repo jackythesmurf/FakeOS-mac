@@ -190,14 +190,14 @@ window.onload = function () {
         bringToFront("contacts-app")
       }
       if (event.target == document.getElementsByClassName("dockapps-contacts-right")[0]){
-        let dragOffsetX = event.offsetX + 222;
+        let dragOffsetX = event.offsetX + 248;
         let dragOffsetY = event.offsetY;
         dragging.classList.add("dragging");
         appMove(dragOffsetX, dragOffsetY, dragging)
         bringToFront("contacts-app")
       }
       if (event.target == document.getElementsByClassName("dockapps-contacts-right-profile")[0]){
-        let dragOffsetX = event.offsetX + 280;
+        let dragOffsetX = event.offsetX + 307;
         let dragOffsetY = event.offsetY + 22;
         dragging.classList.add("dragging");
         appMove(dragOffsetX, dragOffsetY, dragging)
