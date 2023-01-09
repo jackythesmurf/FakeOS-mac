@@ -1,0 +1,213 @@
+@mixin buttonstyle {
+  border-style: none;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dockapps-safari {
+  z-index:1;
+  position: absolute;
+  left: 300px;
+  top: 30px;
+  background-color: rgb(31, 31, 31);
+  min-width: 900px;
+  max-width: 900px;
+  min-height: 500px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  &-header {
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    &-search {
+      border-style: solid;
+      border-radius: 10px;
+      border-color: rgb(88, 88, 88);
+      padding-top: 5px;
+      padding-left: 150px;
+      padding-right: 150px;
+      margin-left: 180px;
+      border-width: 1px;
+    }
+    &-buttons {
+      padding-left: 20px;
+      padding-bottom: 10px;
+      &-red {
+        @include buttonstyle();
+        background-color: red;
+      }
+      &-yellow {
+        @include buttonstyle();
+
+        background-color: rgb(255, 217, 0);
+      }
+      &-green {
+        @include buttonstyle();
+        background-color: rgb(111, 255, 0);
+      }
+    }
+  }
+  &-youtube {
+    background-color: rgb(31, 31, 31);
+
+    &-head {
+      display: flex;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      max-height: 35px;
+      &-icon {
+        margin-left: 20px;
+      }
+      &-search {
+        display: flex;
+        border-style: solid;
+        border-radius: 20px;
+        border-color: rgb(88, 88, 88);
+        border-width: 1px;
+
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 200px;
+        margin-left: 140px;
+        img {
+          transform: translate(190px, 1px);
+        }
+        p {
+          width: 100%;
+        }
+      }
+      &-user {
+        position: absolute;
+        right: 0;
+        margin-right: 15px;
+        padding-right: 20px;
+        border-style: solid;
+        border-style: solid;
+        border-radius: 20px;
+        border-color: rgb(88, 88, 88);
+        border-width: 1px;
+        img {
+          margin-left: 10px;
+          margin-top: 3px;
+          margin-bottom: 3px;
+          border-style: solid;
+          border-color: #06c1ff;
+          border-width: 1px;
+          border-radius: 100%;
+          position: relative;
+          top: 3px;
+        }
+      }
+    }
+    &-contents {
+      display: flex;
+      &-left {
+        &-video {
+          margin-left: 20px;
+        }
+        &-details {
+          margin-left: 20px;
+          &-title {
+            margin-top: 15px;
+            margin-bottom: 5px;
+          }
+          &-channel {
+            display: flex;
+            &-left {
+              display: flex;
+              &-picture {
+                padding: 10px;
+                border-radius: 100%;
+              }
+              &-name {
+                margin-top: 15px;
+                p {
+                  font-size: xx-small;
+                }
+              }
+              &-subscribe {
+                margin-left: 20px;
+                max-height: 35px;
+                min-width: 90px;
+                border-radius: 30px;
+                transform: translate(0px, 15px);
+              }
+            }
+            &-right {
+              display: flex;
+              position: relative;
+              left: 90px;
+              top: 15px;
+              
+              p {
+                font-size: small;
+                position: relative;
+                top: 10px;
+                right: 33px;
+              }
+              
+            }
+          }
+        }
+      }
+      &-right {
+        margin-left: 20px;
+        margin-top: 20px;
+        &-recommendations {
+          &-list {
+            &-video{
+                display: grid;
+                grid-template-columns: 150px 150px;
+                
+                img{
+                    border-radius: 10px;
+
+                }
+                &-title{
+                    
+                    transform: translate(0px, 10px);
+                }
+                &-channelname{
+                    font-size: x-small;
+                    transform: translate(150px, -50px);
+                }
+                &-date{
+                    font-size: x-small;
+                    transform: translate(0px, -30px);
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#user-name {
+  position: relative;
+  bottom: 9px;
+  font-family: sans-serif;
+  font-size: small;
+  color: #06c1ff;
+  left: 4px;
+}
+
+#youtube-logo-font {
+  position: relative;
+  bottom: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+sup {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: sans-serif;
+  position: relative;
+  bottom: 14px;
+  font-size: xx-small;
+}

@@ -1,0 +1,27 @@
+@import "_dock";
+@import "_navbar";
+@import "_finder.scss";
+@import "_safari.scss";
+@import "_contacts.scss";
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    font-family:sans-serif;
+}
+
+body {
+    background: url("https://512pixels.net/wp-content/uploads/2021/06/12-Dark-thumbnail.jpg")
+      no-repeat center fixed;
+    background-size: cover;
+    max-height: 100vh;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+

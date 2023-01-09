@@ -1,0 +1,623 @@
+#dock #dock-contents {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  margin-left: 42%;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#dock #dock-contents .dock-contents-icons {
+  width: 40px;
+  transition: all 0.2s;
+}
+#dock #dock-contents .dock-contents-icons:hover {
+  transform: translate(0px, -15px);
+}
+#dock #dock-contents .dock-contents-icons {
+  margin-left: 15px;
+}
+
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+.navbar-tab {
+  background: rgba(3, 3, 3, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 4px;
+  padding-right: 1%;
+  display: flex;
+}
+.navbar-tab-contents {
+  justify-content: center;
+  padding-left: 2%;
+}
+.navbar-tab-contents-menu {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.navbar-tab-contents:hover {
+  transform: translate(15px, 0px);
+  background-color: rgba(253, 251, 251, 0.3);
+  border-radius: 5px;
+}
+.navbar-tab-contents:hover .navbar-tab-contents-menu {
+  transform: translate(-15px, 0px);
+}
+.navbar-tab-contents-right {
+  position: absolute;
+  right: 10px;
+}
+.navbar .menu-list {
+  list-style: none;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.navbar .menu-list .navbar-contents-menu-icon-list-items {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-left: 10px;
+  transition: all 0.2s;
+  margin-right: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.navbar .menu-list .navbar-contents-menu-icon-list-items:hover {
+  margin-left: 10%;
+  background-color: rgb(53, 162, 225);
+  border-radius: 7px;
+  transform: scale(1.2);
+}
+.navbar #apple-logo-list {
+  background: rgba(3, 3, 3, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 200px;
+  position: absolute;
+  left: 1%;
+}
+.navbar #file-menu-list {
+  background: rgba(3, 3, 3, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 200px;
+  position: absolute;
+  left: 4%;
+}
+.navbar #view-menu-list {
+  background: rgba(3, 3, 3, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 200px;
+  position: absolute;
+  left: 8%;
+}
+.navbar #help-menu-list {
+  background: rgba(3, 3, 3, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 200px;
+  position: absolute;
+  left: 12%;
+}
+
+.dockapps li {
+  list-style: none;
+}
+.dockapps li img {
+  transform: translate(-5px, 2px);
+}
+.dockapps li span {
+  position: relative;
+  bottom: 3px;
+}
+.dockapps-finder {
+  position: fixed;
+  left: 400px;
+  top: 100px;
+  min-width: 680px;
+  z-index: 1;
+}
+.dockapps-finder-left {
+  background-color: rgba(162, 162, 162, 0.5);
+  display: inline-block;
+  background: rgba(42, 42, 42, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  min-height: 500px;
+}
+.dockapps-finder-left-buttons {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.dockapps-finder-left-buttons-red {
+  margin: 4px;
+  padding: 5px;
+  background-color: red;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dockapps-finder-left-buttons-yellow {
+  margin: 4px;
+  padding: 5px;
+  background-color: rgb(255, 217, 0);
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dockapps-finder-left-buttons-green {
+  margin: 4px;
+  padding: 5px;
+  background-color: rgb(111, 255, 0);
+  border-style: none;
+  border-radius: 10px;
+}
+.dockapps-finder-left-favourites-list-header {
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.dockapps-finder-left-favourites-list-items {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.dockapps-finder-left-favourites-list-items:hover {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.dockapps-finder-right {
+  background-color: rgb(37, 37, 37);
+  display: inline-block;
+  position: absolute;
+  min-height: 500px;
+  min-width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.dockapps-finder-right-header {
+  background-color: rgb(58, 58, 58);
+  padding: 20px;
+  padding-left: 60px;
+}
+.dockapps-finder-right-list {
+  padding-left: 70px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+}
+.dockapps-finder-right-list-items img {
+  width: 70px;
+}
+.dockapps-finder-right-list-items p {
+  padding-left: 10px;
+}
+
+.dockapps-safari {
+  z-index: 1;
+  position: absolute;
+  left: 300px;
+  top: 30px;
+  background-color: rgb(31, 31, 31);
+  min-width: 900px;
+  max-width: 900px;
+  min-height: 500px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dockapps-safari-header {
+  background-color: rgb(60, 60, 60);
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dockapps-safari-header-search {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(88, 88, 88);
+  padding-top: 5px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-left: 180px;
+  border-width: 1px;
+}
+.dockapps-safari-header-buttons {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.dockapps-safari-header-buttons-red {
+  border-style: none;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: red;
+}
+.dockapps-safari-header-buttons-yellow {
+  border-style: none;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgb(255, 217, 0);
+}
+.dockapps-safari-header-buttons-green {
+  border-style: none;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgb(111, 255, 0);
+}
+.dockapps-safari-youtube {
+  background-color: rgb(31, 31, 31);
+}
+.dockapps-safari-youtube-head {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  max-height: 35px;
+}
+.dockapps-safari-youtube-head-icon {
+  margin-left: 20px;
+}
+.dockapps-safari-youtube-head-search {
+  display: flex;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(88, 88, 88);
+  border-width: 1px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 200px;
+  margin-left: 140px;
+}
+.dockapps-safari-youtube-head-search img {
+  transform: translate(190px, 1px);
+}
+.dockapps-safari-youtube-head-search p {
+  width: 100%;
+}
+.dockapps-safari-youtube-head-user {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  padding-right: 20px;
+  border-style: solid;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(88, 88, 88);
+  border-width: 1px;
+}
+.dockapps-safari-youtube-head-user img {
+  margin-left: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-style: solid;
+  border-color: #06c1ff;
+  border-width: 1px;
+  border-radius: 100%;
+  position: relative;
+  top: 3px;
+}
+.dockapps-safari-youtube-contents {
+  display: flex;
+}
+.dockapps-safari-youtube-contents-left-video {
+  margin-left: 20px;
+}
+.dockapps-safari-youtube-contents-left-details {
+  margin-left: 20px;
+}
+.dockapps-safari-youtube-contents-left-details-title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.dockapps-safari-youtube-contents-left-details-channel {
+  display: flex;
+}
+.dockapps-safari-youtube-contents-left-details-channel-left {
+  display: flex;
+}
+.dockapps-safari-youtube-contents-left-details-channel-left-picture {
+  padding: 10px;
+  border-radius: 100%;
+}
+.dockapps-safari-youtube-contents-left-details-channel-left-name {
+  margin-top: 15px;
+}
+.dockapps-safari-youtube-contents-left-details-channel-left-name p {
+  font-size: xx-small;
+}
+.dockapps-safari-youtube-contents-left-details-channel-left-subscribe {
+  margin-left: 20px;
+  max-height: 35px;
+  min-width: 90px;
+  border-radius: 30px;
+  transform: translate(0px, 15px);
+}
+.dockapps-safari-youtube-contents-left-details-channel-right {
+  display: flex;
+  position: relative;
+  left: 90px;
+  top: 15px;
+}
+.dockapps-safari-youtube-contents-left-details-channel-right p {
+  font-size: small;
+  position: relative;
+  top: 10px;
+  right: 33px;
+}
+.dockapps-safari-youtube-contents-right {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.dockapps-safari-youtube-contents-right-recommendations-list-video {
+  display: grid;
+  grid-template-columns: 150px 150px;
+}
+.dockapps-safari-youtube-contents-right-recommendations-list-video img {
+  border-radius: 10px;
+}
+.dockapps-safari-youtube-contents-right-recommendations-list-video-title {
+  transform: translate(0px, 10px);
+}
+.dockapps-safari-youtube-contents-right-recommendations-list-video-channelname {
+  font-size: x-small;
+  transform: translate(150px, -50px);
+}
+.dockapps-safari-youtube-contents-right-recommendations-list-video-date {
+  font-size: x-small;
+  transform: translate(0px, -30px);
+}
+
+#user-name {
+  position: relative;
+  bottom: 9px;
+  font-family: sans-serif;
+  font-size: small;
+  color: #06c1ff;
+  left: 4px;
+}
+
+#youtube-logo-font {
+  position: relative;
+  bottom: 10px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+sup {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: sans-serif;
+  position: relative;
+  bottom: 14px;
+  font-size: xx-small;
+}
+
+.dockapps-contacts {
+  display: flex;
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  z-index: 1px;
+}
+.dockapps-contacts-left {
+  background: rgba(42, 42, 42, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 220px;
+  min-height: 400px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.dockapps-contacts-left-buttons {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.dockapps-contacts-left-buttons-red {
+  margin: 4px;
+  padding: 5px;
+  background-color: red;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dockapps-contacts-left-buttons-yellow {
+  margin: 4px;
+  padding: 5px;
+  background-color: rgb(255, 217, 0);
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dockapps-contacts-left-buttons-green {
+  margin: 4px;
+  padding: 5px;
+  background-color: rgb(111, 255, 0);
+  border-style: none;
+  border-radius: 10px;
+}
+.dockapps-contacts-left-tab-search {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: rgba(73, 73, 73, 0.3);
+  border-radius: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dockapps-contacts-left-tab-search span {
+  color: rgba(216, 216, 216, 0.5);
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+}
+.dockapps-contacts-left-tab-search img {
+  transform: translate(6px, 6px);
+}
+.dockapps-contacts-left-tab-header {
+  margin-top: 15px;
+  margin-left: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 150px;
+}
+.dockapps-contacts-left-tab-header p {
+  font-size: small;
+  color: rgba(216, 216, 216, 0.5);
+}
+.dockapps-contacts-left-tab-card {
+  background-color: rgba(170, 170, 170, 0.4);
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.dockapps-contacts-left-tab-card img {
+  border-style: solid;
+  border-color: #06c1ff;
+  border-width: 1px;
+  border-radius: 100%;
+  position: absolute;
+  right: 15px;
+  transform: translate(0px, -3px);
+}
+.dockapps-contacts-right {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgb(42, 37, 37);
+  min-width: 470px;
+  max-width: 470px;
+}
+.dockapps-contacts-right-profile {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+.dockapps-contacts-right-profile img {
+  background: white;
+  border-radius: 100%;
+}
+.dockapps-contacts-right-profile p {
+  position: relative;
+  top: 37px;
+  left: 15px;
+}
+.dockapps-contacts-right-details {
+  font-size: small;
+  padding-top: 40px;
+}
+.dockapps-contacts-right-details #contact-details {
+  padding-left: 15px;
+}
+.dockapps-contacts-right-details-email {
+  display: flex;
+  padding-left: 70px;
+  margin-left: 30px;
+  padding-right: 70px;
+  margin-right: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dockapps-contacts-right-details-linkedin {
+  margin-top: 10px;
+  display: flex;
+  padding-left: 70px;
+  margin-left: 30px;
+  padding-right: 70px;
+  margin-right: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dockapps-contacts-right-details-linkedin p {
+  position: relative;
+  top: 4px;
+}
+.dockapps-contacts-right-details-github {
+  margin-top: 10px;
+  display: flex;
+  padding-left: 70px;
+  margin-left: 30px;
+  padding-right: 70px;
+  margin-right: 30px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dockapps-contacts-right-details-github p {
+  position: relative;
+  top: 4px;
+}
+.dockapps-contacts-right-details-note {
+  margin-top: 10px;
+  padding-left: 70px;
+  margin-left: 30px;
+}
+.dockapps-contacts-right-details-note #contacts-notes {
+  margin-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
+  font-family: sans-serif;
+}
+
+body {
+  background: url("https://512pixels.net/wp-content/uploads/2021/06/12-Dark-thumbnail.jpg") no-repeat center fixed;
+  background-size: cover;
+  max-height: 100vh;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}/*# sourceMappingURL=main.css.map */

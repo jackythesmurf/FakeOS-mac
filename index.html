@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <script src="script/script.js"></script>
+</head>
+
+<body id="monitor">
+    <div class="desktop">
+        <div class="navbar">
+            <div class="navbar-tab">
+                <div class="navbar-tab-contents">
+                    <button class="navbar-tab-contents-menu">
+                        <div>
+                            <img id="apple-logo" src="icons/icons8-apple-logo.svg" alt="" />
+                        </div>
+                    </button>
+                </div>
+                <div class="navbar-tab-contents">
+                    <button id="file-menu" class="navbar-tab-contents-menu">
+                        File
+                    </button>
+                </div>
+                <div class="navbar-tab-contents">
+                    <button id="view-menu" class="navbar-tab-contents-menu">
+                        View
+                    </button>
+                </div>
+                <div class="navbar-tab-contents">
+                    <button id="help-menu" class="navbar-tab-contents-menu">
+                        Help
+                    </button>
+                </div>
+                <div class="navbar-tab-contents-empty"></div>
+                <div class="navbar-tab-contents-right">
+                    <div id="navbar-tab-contents-right-time">
+                        Mon 2 Jan &#160; 10:28 pm
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-contents-menu-icon-list">
+                <ul class="menu-list" id="apple-logo-list">
+                    <li class="navbar-contents-menu-icon-list-items">About this Mac</li>
+                    <li class="navbar-contents-menu-icon-list-items">
+                        System Preferences
+                    </li>
+                    <li class="navbar-contents-menu-icon-list-items">App Store...</li>
+                </ul>
+            </div>
+            <div class="navbar-contents-menu-icon-list">
+                <ul class="menu-list" id="file-menu-list">
+                    <li class="navbar-contents-menu-icon-list-items">New Text File</li>
+                    <li class="navbar-contents-menu-icon-list-items">New Folder</li>
+                    <li class="navbar-contents-menu-icon-list-items">New Window</li>
+                </ul>
+            </div>
+            <div class="navbar-contents-menu-icon-list">
+                <ul class="menu-list" id="view-menu-list">
+                    <li class="navbar-contents-menu-icon-list-items">About this Mac</li>
+                    <li class="navbar-contents-menu-icon-list-items">
+                        System Preferences
+                    </li>
+                    <li class="navbar-contents-menu-icon-list-items">App Store...</li>
+                </ul>
+            </div>
+            <div class="navbar-contents-menu-icon-list">
+                <ul class="menu-list" id="help-menu-list">
+                    <li class="navbar-contents-menu-icon-list-items">About this Mac</li>
+                    <li class="navbar-contents-menu-icon-list-items">
+                        System Preferences
+                    </li>
+                    <li class="navbar-contents-menu-icon-list-items">App Store...</li>
+                </ul>
+            </div>
+        </div>
+        <div id="dock">
+            <div id="dock-contents">
+                <div class="dock-contents-icons">
+                    <img id="finder-app-icon" src="icons/finder.svg" alt="" />
+                </div>
+                <div class="dock-contents-icons">
+                    <img id="safari-app-icon" src="icons/safari.svg" alt="" />
+                </div>
+                <div class="dock-contents-icons">
+                    <img id="contacts-app-icon" src="icons/contacts.svg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="dockapps">
+            <div class="dockapps-finder" id="finder-app" onclick="bringToFront('finder-app')">
+                <div class="dockapps-finder-left">
+                    <div class="dockapps-finder-left-buttons">
+                        <button id="finder-app-close" class="dockapps-finder-left-buttons-red"></button>
+                        <button id="finder-app-close" class="dockapps-finder-left-buttons-yellow"></button>
+                        <button class="dockapps-finder-left-buttons-green"></button>
+                    </div>
+                    <div class="dockapps-finder-left-favourites">
+                        <ul class="dockapps-finder-left-favourites-list">
+                            <h5 class="dockapps-finder-left-favourites-list-header">Favourites</h5>
+                            <li class="dockapps-finder-left-favourites-list-items">
+                                <img src="icons/icons8-airdrop.svg" alt="">
+                                <span>AirDrop</span>
+
+                            </li>
+                            <li class="dockapps-finder-left-favourites-list-items">
+                                <img src="icons/recent.svg" alt="">
+                                <span class="menu-tab">Recent</span>
+
+                            </li>
+                            <li class="dockapps-finder-left-favourites-list-items">
+                                <img src="icons/icons8-app-store.svg" alt="">
+                                <span class="menu-tab">Application</span>
+
+                            </li>
+                            <li class="dockapps-finder-left-favourites-list-items">
+                                <img src="icons/desktop (1).svg" alt="">
+                                <span class="menu-tab">
+                                    Desktop
+                                </span>
+
+                            </li>
+                            <li class="dockapps-finder-left-favourites-list-items">
+                                <img src="icons/document.svg" alt="">
+                                <span class="menu-tab">
+                                    Documents
+                                </span>
+
+                            </li>
+                            <li class="dockapps-finder-left-favourites-list-items">
+                                <img src="icons/download.svg" alt="">
+                                <span class="menu-tab">
+                                    Downloads
+                                </span>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="dockapps-finder-right">
+                    <h4 class="dockapps-finder-right-header">Recent</h4>
+                    <ul class="dockapps-finder-right-list">
+                        <li class="dockapps-finder-right-list-items">
+                            <img src="icons/icons8-mac-folder-48.png" class="dockapps-finder-right-list-items-folder"
+                                alt="">
+                            <p class="dockapps-finder-right-list-items-name">File 1</p>
+                        </li>
+                        <li class="dockapps-finder-right-list-items">
+                            <img src="icons/icons8-mac-folder-48.png" class="dockapps-finder-right-list-items-folder"
+                                alt="">
+                            <p class="dockapps-finder-right-list-items-name">File 2</p>
+                        </li>
+                        <li class="dockapps-finder-right-list-items">
+                            <img src="icons/icons8-mac-folder-48.png" class="dockapps-finder-right-list-items-folder"
+                                alt="">
+                            <p class="dockapps-finder-right-list-items-name">File 3</p>
+                        </li>
+                        <li class="dockapps-finder-right-list-items">
+                            <img src="icons/icons8-mac-folder-48.png" class="dockapps-finder-right-list-items-folder"
+                                alt="">
+                            <p class="dockapps-finder-right-list-items-name">File 4</p>
+                        </li>
+                        <li class="dockapps-finder-right-list-items">
+                            <img src="icons/icons8-mac-folder-48.png" class="dockapps-finder-right-list-items-folder"
+                                alt="">
+                            <p class="dockapps-finder-right-list-items-name">File 6</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="dockapps-safari" id="safari-app" onclick="bringToFront('safari-app')">
+                <div class="dockapps-safari-header">
+
+                    <div class="dockapps-safari-header-buttons">
+
+                        <button id="safari-app-close" class="dockapps-safari-header-buttons-red"></button>
+                        <button id="safari-app-close" class="dockapps-safari-header-buttons-yellow"></button>
+                        <button class="dockapps-safari-header-buttons-green"></button>
+
+
+                    </div>
+                    <div class="dockapps-safari-header-search">
+                        <p>youtube.com</p>
+                    </div>
+
+
+                </div>
+                <div class="dockapps-safari-youtube">
+                    <div class="dockapps-safari-youtube-head">
+                        <div class="dockapps-safari-youtube-head-icon">
+                            <img src="icons/youtube.svg" alt="">
+                            <span id="youtube-logo-font">YouTube</span> <sup>AU</sup>
+                        </div>
+                        <div class="dockapps-safari-youtube-head-search">
+                            <p>
+                                My favourite song
+                            </p>
+                            <img src="icons/icons8-search.svg" alt="">
+
+                        </div>
+                        <div class="dockapps-safari-youtube-head-user">
+                            <img src="icons/profile.svg" alt="">
+                            <span id="user-name">Sign in</span>
+                        </div>
+                    </div>
+                    <div class="dockapps-safari-youtube-contents">
+                        <div class="dockapps-safari-youtube-contents-left">
+                            <div class="dockapps-safari-youtube-contents-left-video">
+                                <iframe width="550" height="350" src="https://www.youtube.com/embed/GEfLMIZkK5M"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+
+                            </div>
+                            <div class="dockapps-safari-youtube-contents-left-details">
+                                <div class="dockapps-safari-youtube-contents-left-details-title">
+                                    <p>南方姑娘（弹唱）</p>
+                                </div>
+                                <div class="dockapps-safari-youtube-contents-left-details-channel">
+                                    <div class="dockapps-safari-youtube-contents-left-details-channel-left">
+                                        <img class="dockapps-safari-youtube-contents-left-details-channel-left-picture"
+                                            src="https://yt3.ggpht.com/j4EWzfXlKIryWRgC-4jzqEqoQ83mNcxeLXa3kqNjw0VrGZMP6mOHBxza58JbAvEN6fPuYJwR=s48-c-k-c0x00ffffff-no-rj"
+                                            alt="">
+                                        <h4 class="dockapps-safari-youtube-contents-left-details-channel-left-name">赵雷
+                                            <p>7.29k subscribers</p>
+                                        </h4>
+                                        <button
+                                            class="dockapps-safari-youtube-contents-left-details-channel-left-subscribe">Subscribe</button>
+
+                                    </div>
+                                    <div class="dockapps-safari-youtube-contents-left-details-channel-right">
+
+                                        <img src="icons/like.svg" alt="">
+                                        <p>1k</p>
+                                        <img src="icons/dislike.svg" alt="">
+                                        <p>3</p>
+                                        <img id="share-icon" src="icons/share.svg" alt="">
+                                        <p>Share</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dockapps-safari-youtube-contents-right">
+                            <div class="dockapps-safari-youtube-contents-right-recommendations">
+                                <ul class="dockapps-safari-youtube-contents-right-recommendations-list">
+                                    <li class="dockapps-safari-youtube-contents-right-recommendations-list-video">
+                                        <img src="https://i.ytimg.com/vi/Sl6ZQxoABSI/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLB3Xn3MlGFz_L8I_wFyQd4MHpWobQ"
+                                            width="150" alt="">
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-title">如常</span>
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-channelname">房東的貓</span>
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-date">6.8M
+                                            4 years ago</span>
+                                    </li>
+                                    <li class="dockapps-safari-youtube-contents-right-recommendations-list-video">
+                                        <img src="https://i.ytimg.com/vi/0J5zEI7aAe4/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDwFyIyvlzlp6xE9PrGXYmZqDiD7A"
+                                            width="150" alt="">
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-title">下一站茶山劉</span>
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-channelname">房東的貓</span>
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-date">1.1M
+                                            5 years ago</span>
+                                    </li>
+                                    <li class="dockapps-safari-youtube-contents-right-recommendations-list-video">
+                                        <img src="https://i.ytimg.com/vi/g8jihjmrvqU/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAV6Oyyva3KZ5ewsjCUW1KlFG7MEg"
+                                            width="150" alt="">
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-title">
+                                            我记得
+                                        </span>
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-channelname">
+                                            赵雷
+                                        </span>
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-date">34k
+                                            3 months ago</span>
+                                    </li>
+                                    <li class="dockapps-safari-youtube-contents-right-recommendations-list-video">
+                                        <img src="https://i.ytimg.com/vi/oEms9qMlyjI/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB4FMogRiLRx7rOPZgdGa_K41jH4w"
+                                            width="150" alt="">
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-title">
+                                            恋爱的犀牛
+                                        </span>
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-channelname">
+                                            黄雨篱
+                                        </span>
+                                        <span
+                                            class="dockapps-safari-youtube-contents-right-recommendations-list-video-date">3.4k
+                                            1 years ago</span>
+
+                                    </li>
+                                    <li class="dockapps-safari-youtube-contents-right-recommendations-list-video"></li>
+
+                                </ul>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="contacts-app" onclick="bringToFront('contacts-app')">
+                <div class="dockapps-contacts">
+                    <div class="dockapps-contacts-left">
+                        <div class="dockapps-contacts-left-buttons">
+                            <button id="contacts-app-close" class="dockapps-contacts-left-buttons-red">
+
+                            </button>
+                            <button id="contacts-app-close" class="dockapps-contacts-left-buttons-yellow">
+
+                            </button>
+                            <button class="dockapps-contacts-left-buttons-green">
+
+                            </button>
+
+
+
+                        </div>
+                        <div class="dockapps-contacts-left-tab">
+                            <div class="dockapps-contacts-left-tab-search">
+                                <img src="icons/icons8-search.svg" alt="">
+                                <span>Search</span>
+                            </div>
+                            <div class="dockapps-contacts-left-tab-header">
+                                <p>My Card</p>
+                            </div>
+                            <div class="dockapps-contacts-left-tab-card">
+                                <p>Jacky Li</p>
+                                <img src="icons/profile.svg" alt="">
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="dockapps-contacts-right">
+                        <div class="dockapps-contacts-right-profile">
+                            <img src="http://img2.3png.com/9f025d4943db31dceaa784176651a04d90a8.png" width="90"
+                                height="90" alt="">
+                            <p>Jacky Li</p>
+
+                        </div>
+                        <div class="dockapps-contacts-right-details">
+                            <div class="dockapps-contacts-right-details-email">
+                                <p id="contact-method">Email</p>
+                                <p id="contact-details">jackythesmurf@gmail.com</p>
+                            </div>
+                            <div class="dockapps-contacts-right-details-linkedin">
+                                <p id="contact-method">LinkedIn</p>
+
+                                <a id="contact-details" href="https://www.linkedin.com/in/jacky-li-2277a8259"><img
+                                        src="icons/linkedin.svg" alt=""></a>
+                            </div>
+                            <div class="dockapps-contacts-right-details-github">
+                                <p id="contact-method">GitHub</p>
+
+                                <a id="contact-details" href="https://github.com/jackythesmurf"><img width="20"
+                                        height="20" src="icons/github.svg" alt=""></a>
+
+                            </div>
+                            <div class="dockapps-contacts-right-details-note">
+                                <p id="contact-method">Notes</p>
+                                <p id="contact-notes">If you like what you see, then be sure to contact me <br> and see
+                                    what I can do for you :)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>

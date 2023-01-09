@@ -1,0 +1,38 @@
+@mixin glassmorph{
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border: 1px solid rgba( 255, 255, 255, 0.10 );
+    border-radius: 10px ;
+  }
+
+  #dock {
+    
+    #dock-contents {
+      .dock-contents-icons {
+        width: 40px;
+        transition: all 0.2s;
+      }
+      .dock-contents-icons:hover {
+        transform: translate(0px, -15px);
+      }
+  
+      display: flex;
+      position: absolute;
+      bottom: 0px;
+      z-index: 10;
+      margin-left: 42%;
+      padding-top: 15px;
+      padding-left: 10px;
+      padding-right: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      @include glassmorph();
+      cursor: pointer;
+      .dock-contents-icons{
+        margin-left: 15px;
+      
+      }
+    }
+  }
