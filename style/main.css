@@ -435,16 +435,13 @@
   transform: translate(0px, 15px);
 }
 .dockapps-safari-youtube-contents-left-details-channel-right {
-  display: flex;
-  position: relative;
-  left: 90px;
-  top: 15px;
+  display: grid;
+  grid-template-columns: 50px 10px 50px 10px 50px 10px;
+  margin-left: 80px;
 }
 .dockapps-safari-youtube-contents-left-details-channel-right p {
   font-size: small;
-  position: relative;
-  top: 10px;
-  right: 33px;
+  transform: translate(-30px, 3px);
 }
 .dockapps-safari-youtube-contents-left-details-channel-videostats {
   font-size: x-small;
