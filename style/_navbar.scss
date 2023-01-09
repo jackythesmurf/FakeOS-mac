@@ -7,11 +7,12 @@
 }
 
 .navbar {
+  font-size: small;
   position: relative;
   z-index:10;
   &-tab {
     @include glassmorph();
-    padding-top: 4px;
+    padding-top: 5px;
 
     padding-right: 1%;
     display: flex;
@@ -28,14 +29,17 @@
         font: inherit;
         cursor: pointer;
         outline: inherit;
+        img{
+          transform: translate(0px, -1px);
+        }
       }
     }
     &-contents:hover {
-      transform: translate(15px, 0px);
+      transform: translate(15px, -2px);
       background-color: rgba(253, 251, 251, 0.3);
       border-radius: 5px;
       .navbar-tab-contents-menu {
-        transform: translate(-15px, 0px);
+        transform: translate(-15px, 2px);
       }
     }
     &-contents-right {
@@ -87,12 +91,20 @@
     @include glassmorph();
     min-width: 200px;
     position: absolute;
-    left: 8%;
+    left: 7%;
+    transition: all 0.2s;
+    @media only screen and (max-width: 1600px) {
+      left: 8%;
+    }
   }
   #help-menu-list {
     @include glassmorph();
     min-width: 200px;
     position: absolute;
-    left: 12%;
+    left: 10%;
+    transition: all 0.2s;
+    @media only screen and (max-width: 1600px) {
+      left: 12%;
+    }
   }
 }

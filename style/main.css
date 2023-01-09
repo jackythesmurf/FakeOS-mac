@@ -8,7 +8,7 @@
   padding-left: 10px;
   padding-right: 20px;
   padding-bottom: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(20px);
@@ -18,7 +18,7 @@
   cursor: pointer;
 }
 #dock #dock-contents .dock-contents-icons {
-  width: 40px;
+  width: 35px;
   transition: all 0.2s;
 }
 #dock #dock-contents .dock-contents-icons:hover {
@@ -29,6 +29,7 @@
 }
 
 .navbar {
+  font-size: small;
   position: relative;
   z-index: 10;
 }
@@ -38,7 +39,7 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 4px;
+  padding-top: 5px;
   padding-right: 1%;
   display: flex;
 }
@@ -55,13 +56,16 @@
   cursor: pointer;
   outline: inherit;
 }
+.navbar-tab-contents-menu img {
+  transform: translate(0px, -1px);
+}
 .navbar-tab-contents:hover {
-  transform: translate(15px, 0px);
+  transform: translate(15px, -2px);
   background-color: rgba(253, 251, 251, 0.3);
   border-radius: 5px;
 }
 .navbar-tab-contents:hover .navbar-tab-contents-menu {
-  transform: translate(-15px, 0px);
+  transform: translate(-15px, 2px);
 }
 .navbar-tab-contents-right {
   position: absolute;
@@ -115,7 +119,13 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-width: 200px;
   position: absolute;
-  left: 8%;
+  left: 7%;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 1600px) {
+  .navbar #view-menu-list {
+    left: 8%;
+  }
 }
 .navbar #help-menu-list {
   background: rgba(3, 3, 3, 0.3);
@@ -125,7 +135,13 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-width: 200px;
   position: absolute;
-  left: 12%;
+  left: 10%;
+  transition: all 0.2s;
+}
+@media only screen and (max-width: 1600px) {
+  .navbar #help-menu-list {
+    left: 12%;
+  }
 }
 
 .dockapps li {
