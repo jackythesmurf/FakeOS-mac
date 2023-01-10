@@ -6,6 +6,8 @@ An interactive browser clone of the dark themed macOS Monterey operating system.
 
  This project is a single page application that attempts to replicate the interactions and stylings of MacOS Monterey using vanillia JavaScript, HTML and CSS/SCSS. 
 
+ <strong>Link to live project: https://jackythesmurf.github.io/FakeOS-mac/</strong>
+
  The layout and format of the design is replicated using CSS and SCSS, the content is added with HTML and the interactive elements are controlled with JavaScript. 
 
 <img width="500" src="Screen Shot 2023-01-10 at 9.39.59 am.png">
