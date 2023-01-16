@@ -1,6 +1,6 @@
 # FakeOS-macOS
 
-An interactive browser clone of the dark themed macOS Monterey operating system.
+An interactive browser clone of the macOS Monterey operating system in dark theme.
 
  ## Introduction
 
