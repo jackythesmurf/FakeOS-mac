@@ -8,10 +8,11 @@ This is an interactive website clone of the macOS Monterey operating system in d
 
  <strong>Link to live project: https://jackythesmurf.github.io/FakeOS-mac/</strong>
  
- ## How its made
+ ## How its created
 
  The layout and format of the design is manipulated using CSS and SCSS, and aims to faithly reflect the macOS Moneterey operating system.
  Some key design features include the Mac's glassmorhpic effects, and minimalism. 
+ 
  Within the apps is also a clone of the Youtube webpage, again aimed to most accurately represent the actual styling of Youtube on the web.
  The interactive elements, such as dragging the app, closing and opening apps, and the navbar are controlled using javascript through DOM manipulation.
 
@@ -51,7 +52,8 @@ This is an interactive website clone of the macOS Monterey operating system in d
 
 ## What I learnt
 In this project I aimed to strictly adhere to the original styling of macOS, and in doing so, I gained greater practical experience with CSS and SCSS.
-I can now confidently and accurately create websites to match designs, using the most suitable toolkits available, however the organisation and structure of code and files can be greatly improved for scalability and reuseability.  
+
+I can now confidently and accurately create websites to match designs, using the most suitable toolkits available. However the organisation and structure of CSS/SCSS could be more structured and seperated into files as to greatly improved scalability and reuseability.  
 
 ## Future Developments
 Future features will include additional Apps, and each App will display my personal projects, such as google books search, and eCommerce shop.
