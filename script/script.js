@@ -35,13 +35,13 @@ const updateClock = (timeHTML) => {
 
   switch (monthNumeral) {
     case 0:
-      dateString += "Jan &nbsp ";
+      dateString += "Jan ";
       break;
     case 1:
-      dateString += "Feb &#160";
+      dateString += "Feb ";
       break;
     case 2:
-      dateString += "Mar &#160";
+      dateString += "Mar ";
       break;
     case 3:
       dateString += "Apr ";
